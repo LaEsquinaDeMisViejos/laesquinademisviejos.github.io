@@ -1,8 +1,17 @@
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (event) => {
+  event.stopPropagation();
   nav.classList.toggle('open');
+});
+
+nav.addEventListener('click', (event) => {
+  event.stopPropagation();
+});
+
+document.addEventListener('click', () => {
+  nav.classList.remove('open');
 });
 
 document.querySelectorAll('.nav a').forEach(link => {
