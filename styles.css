@@ -31,12 +31,7 @@ a {
   z-index: 1000;
 }
 
-.brand {
-  color: #f3e9d2;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
+
 
 .hamburger {
   width: 44px;
@@ -125,25 +120,8 @@ a {
   animation-delay: 1.5s;
 }
 
-.bg-line {
-  position: absolute;
-  width: 120px;
-  height: 1px;
-  background: rgba(214,30,30,.6);
-  transform: rotate(-35deg);
-  animation: lineMove 6s linear infinite;
-}
 
-.line-one {
-  top: 30%;
-  right: 20%;
-}
 
-.line-two {
-  bottom: 28%;
-  left: 20%;
-  animation-delay: 2s;
-}
 
 .hero-content {
   position: relative;
@@ -437,16 +415,7 @@ section {
   }
 }
 
-@keyframes lineMove {
-  from {
-    transform: translateX(-30px) rotate(-35deg);
-    opacity: .2;
-  }
-  to {
-    transform: translateX(60px) rotate(-35deg);
-    opacity: .8;
-  }
-}
+
 
 @keyframes logoPulse {
   0%, 100% {
