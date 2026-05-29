@@ -9,11 +9,34 @@
 
 <body>
 
+<header class="header">
+  <a href="#" class="brand">La Esquina</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="#menu">Menú</a>
+    <a href="#ambiente">Ambiente</a>
+    <a href="#mapa">Mapa</a>
+    <a href="tel:0000000000">Llamar</a>
+    <a href="https://wa.me/10000000000" class="nav-whatsapp">WhatsApp</a>
+  </nav>
+</header>
+
 <section class="hero">
-  <div class="hero-content">
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-line line-one"></div>
+  <div class="bg-line line-two"></div>
+
+  <div class="hero-content reveal-up">
     <img src="logoLa.png" alt="La Esquina de Mis Viejos" class="logo">
-    <h1>La Esquina de Mis Viejos</h1>
-    <p class="lema">Donde vive el barrio de antes</p>
+    <p class="eyebrow">Billar • Dominó • Salsa de Puerto Rico</p>
+    <h1>Donde vive el barrio de antes</h1>
 
     <div class="hero-buttons">
       <a href="#menu" class="btn btn-primary">Ver Menú</a>
@@ -23,67 +46,148 @@
 </section>
 
 <section class="about">
-  <div class="container">
+  <div class="container reveal-left">
     <h2 class="section-title">Nuestra Esquina</h2>
     <p class="section-subtitle">
       Un lugar para compartir entre amigos, disfrutar de una cerveza fría,
       una buena partida de billar, dominó y la mejor picadera en un ambiente
       que mantiene viva la esencia del barrio de antes.
     </p>
-
-    <div class="about-card">
-      <p>
-        La Esquina de Mis Viejos combina tradición, entretenimiento y buena
-        comida en un ambiente acogedor donde cada visita se convierte en una
-        experiencia memorable.
-      </p>
-    </div>
   </div>
 </section>
 
 <section class="menu" id="menu">
   <div class="container">
-    <h2 class="section-title">Menú</h2>
-    <p class="section-subtitle">Bebidas, picadera y los favoritos de la casa.</p>
+
+    <div class="section-heading reveal-up">
+      <span></span>
+      <strong>Menú</strong>
+      <span></span>
+    </div>
+
+    <p class="section-subtitle reveal-up">
+      Bebidas, picadera y favoritos de la casa.
+    </p>
+
+    <div class="menu-tabs reveal-up">
+      <button class="tab-btn active" data-category="todo">Todo</button>
+      <button class="tab-btn" data-category="bebidas">Bebidas</button>
+      <button class="tab-btn" data-category="comida">Comida</button>
+      <button class="tab-btn" data-category="ambiente">Ambiente</button>
+    </div>
 
     <div class="menu-grid">
-      <div class="card"><div class="card-img cerveza"></div><div class="card-body"><h3>Cervezas</h3><p>Las favoritas del barrio siempre bien frías.</p></div></div>
-      <div class="card"><div class="card-img tragos"></div><div class="card-body"><h3>Tragos</h3><p>Cocteles clásicos y tropicales.</p></div></div>
-      <div class="card"><div class="card-img shots"></div><div class="card-body"><h3>Shots</h3><p>Para compartir y celebrar.</p></div></div>
-      <div class="card"><div class="card-img camarones"></div><div class="card-body"><h3>Camarones</h3><p>Preparados al momento.</p></div></div>
-      <div class="card"><div class="card-img tostones"></div><div class="card-body"><h3>Tostones</h3><p>Crujientes y recién hechos.</p></div></div>
-      <div class="card"><div class="card-img picadera"></div><div class="card-body"><h3>Picadera</h3><p>Perfecta para compartir entre amigos.</p></div></div>
+
+      <div class="card reveal-left menu-item" data-category="bebidas">
+        <div class="card-img cerveza"></div>
+        <div class="card-body">
+          <h3>Cervezas</h3>
+          <p>Las favoritas del barrio siempre bien frías.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-right menu-item" data-category="bebidas">
+        <div class="card-img tragos"></div>
+        <div class="card-body">
+          <h3>Tragos</h3>
+          <p>Cocteles clásicos y tropicales.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-left menu-item" data-category="bebidas">
+        <div class="card-img shots"></div>
+        <div class="card-body">
+          <h3>Shots</h3>
+          <p>Para compartir y celebrar.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-right menu-item" data-category="comida">
+        <div class="card-img camarones"></div>
+        <div class="card-body">
+          <h3>Camarones</h3>
+          <p>Preparados al momento.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-left menu-item" data-category="comida">
+        <div class="card-img tostones"></div>
+        <div class="card-body">
+          <h3>Tostones</h3>
+          <p>Crujientes y recién hechos.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-right menu-item" data-category="comida">
+        <div class="card-img picadera"></div>
+        <div class="card-body">
+          <h3>Picadera</h3>
+          <p>Perfecta para compartir entre amigos.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-left menu-item" data-category="ambiente">
+        <div class="card-img billar"></div>
+        <div class="card-body">
+          <h3>Billar</h3>
+          <p>Mesas para disfrutar partidas entre amigos.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-right menu-item" data-category="ambiente">
+        <div class="card-img domino"></div>
+        <div class="card-body">
+          <h3>Dominó</h3>
+          <p>La tradición del barrio sigue viva.</p>
+        </div>
+      </div>
+
+      <div class="card reveal-left menu-item" data-category="ambiente">
+        <div class="card-img ambiente-img"></div>
+        <div class="card-body">
+          <h3>Juegos de Bar</h3>
+          <p>Un ambiente acogedor para compartir.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="ambiente-section">
-  <div class="container">
-    <h2 class="section-title">Ambiente</h2>
-    <p class="section-subtitle">Mucho más que un bar.</p>
+<section class="ambiente-section" id="ambiente">
+  <div class="container reveal-right">
+    <h2 class="section-title">Ambiente de Barrio</h2>
+    <p class="section-subtitle">
+      Billar, dominó, música, juegos de bar y la energía de una esquina boricua.
+    </p>
+  </div>
+</section>
 
-    <div class="ambiente-grid">
-      <div class="card"><div class="card-img billar"></div><div class="card-body"><h3>Billar</h3><p>Mesas para disfrutar partidas entre amigos.</p></div></div>
-      <div class="card"><div class="card-img domino"></div><div class="card-body"><h3>Dominó</h3><p>La tradición del barrio sigue viva.</p></div></div>
-      <div class="card"><div class="card-img ambiente-img"></div><div class="card-body"><h3>Juegos y Diversión</h3><p>Un ambiente acogedor para compartir.</p></div></div>
+<section class="mapa" id="mapa">
+  <div class="container reveal-left">
+    <h2 class="section-title">Ubicación</h2>
+    <div class="map-box">
+      <p>Mapa de Google próximamente</p>
     </div>
   </div>
 </section>
 
 <section class="contacto" id="contacto">
   <div class="container">
-    <div class="contact-box">
+    <div class="contact-box reveal-up">
       <h2 class="section-title">Visítanos</h2>
       <p>Pronto estaremos compartiendo ubicación, horarios, redes sociales y promociones.</p>
-      <br>
-      <a href="#" class="btn btn-primary">WhatsApp</a>
+      <a href="https://wa.me/10000000000" class="btn btn-primary">WhatsApp</a>
     </div>
   </div>
 </section>
+
+<a href="https://wa.me/10000000000" class="floating-whatsapp">WhatsApp</a>
 
 <footer class="footer">
   © 2026 La Esquina de Mis Viejos • Todos los derechos reservados
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>
