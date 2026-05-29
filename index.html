@@ -1,183 +1,89 @@
-```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Esquina de Mis Viejos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
 
 <section class="hero">
-    <div class="hero-content">
+  <div class="hero-content">
+    <img src="logoLa.png" alt="La Esquina de Mis Viejos" class="logo">
+    <h1>La Esquina de Mis Viejos</h1>
+    <p class="lema">Donde vive el barrio de antes</p>
 
-        <img src="logoLa.png" alt="La Esquina de Mis Viejos" class="logo">
-
-        <h1>La Esquina de Mis Viejos</h1>
-
-        <p class="lema">
-            Donde vive el barrio de antes
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#menu" class="btn btn-primary">Ver Menú</a>
-            <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
-        </div>
-
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">Ver Menú</a>
+      <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
     </div>
+  </div>
 </section>
 
 <section class="about">
-    <div class="container">
+  <div class="container">
+    <h2 class="section-title">Nuestra Esquina</h2>
+    <p class="section-subtitle">
+      Un lugar para compartir entre amigos, disfrutar de una cerveza fría,
+      una buena partida de billar, dominó y la mejor picadera en un ambiente
+      que mantiene viva la esencia del barrio de antes.
+    </p>
 
-        <h2 class="section-title">Nuestra Esquina</h2>
-
-        <p class="section-subtitle">
-            Un lugar para compartir entre amigos, disfrutar de una cerveza fría,
-            una buena partida de billar, dominó y la mejor picadera en un ambiente
-            que mantiene viva la esencia del barrio de antes.
-        </p>
-
-        <div class="about-card">
-            <p>
-                La Esquina de Mis Viejos combina tradición, entretenimiento y buena
-                comida en un ambiente acogedor donde cada visita se convierte en una
-                experiencia memorable.
-            </p>
-        </div>
-
+    <div class="about-card">
+      <p>
+        La Esquina de Mis Viejos combina tradición, entretenimiento y buena
+        comida en un ambiente acogedor donde cada visita se convierte en una
+        experiencia memorable.
+      </p>
     </div>
+  </div>
 </section>
 
 <section class="menu" id="menu">
+  <div class="container">
+    <h2 class="section-title">Menú</h2>
+    <p class="section-subtitle">Bebidas, picadera y los favoritos de la casa.</p>
 
-    <div class="container">
-
-        <h2 class="section-title">Menú</h2>
-
-        <p class="section-subtitle">
-            Bebidas, picadera y los favoritos de la casa.
-        </p>
-
-        <div class="menu-grid">
-
-            <div class="card">
-                <div class="card-img cerveza"></div>
-                <div class="card-body">
-                    <h3>Cervezas</h3>
-                    <p>Las favoritas del barrio siempre bien frías.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img tragos"></div>
-                <div class="card-body">
-                    <h3>Tragos</h3>
-                    <p>Cocteles clásicos y tropicales.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img shots"></div>
-                <div class="card-body">
-                    <h3>Shots</h3>
-                    <p>Para compartir y celebrar.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img camarones"></div>
-                <div class="card-body">
-                    <h3>Camarones</h3>
-                    <p>Preparados al momento.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img tostones"></div>
-                <div class="card-body">
-                    <h3>Tostones</h3>
-                    <p>Crujientes y recién hechos.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img picadera"></div>
-                <div class="card-body">
-                    <h3>Picadera</h3>
-                    <p>Perfecta para compartir entre amigos.</p>
-                </div>
-            </div>
-
-        </div>
-
+    <div class="menu-grid">
+      <div class="card"><div class="card-img cerveza"></div><div class="card-body"><h3>Cervezas</h3><p>Las favoritas del barrio siempre bien frías.</p></div></div>
+      <div class="card"><div class="card-img tragos"></div><div class="card-body"><h3>Tragos</h3><p>Cocteles clásicos y tropicales.</p></div></div>
+      <div class="card"><div class="card-img shots"></div><div class="card-body"><h3>Shots</h3><p>Para compartir y celebrar.</p></div></div>
+      <div class="card"><div class="card-img camarones"></div><div class="card-body"><h3>Camarones</h3><p>Preparados al momento.</p></div></div>
+      <div class="card"><div class="card-img tostones"></div><div class="card-body"><h3>Tostones</h3><p>Crujientes y recién hechos.</p></div></div>
+      <div class="card"><div class="card-img picadera"></div><div class="card-body"><h3>Picadera</h3><p>Perfecta para compartir entre amigos.</p></div></div>
     </div>
-
+  </div>
 </section>
 
-<section class="ambiente">
+<section class="ambiente-section">
+  <div class="container">
+    <h2 class="section-title">Ambiente</h2>
+    <p class="section-subtitle">Mucho más que un bar.</p>
 
-    <div class="container">
-
-        <h2 class="section-title">Ambiente</h2>
-
-        <p class="section-subtitle">
-            Mucho más que un bar.
-        </p>
-
-        <div class="ambiente-grid">
-
-            <div class="card">
-                <div class="card-img billar"></div>
-                <div class="card-body">
-                    <h3>Billar</h3>
-                    <p>Mesas para disfrutar partidas entre amigos.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img domino"></div>
-                <div class="card-body">
-                    <h3>Dominó</h3>
-                    <p>La tradición del barrio sigue viva.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img ambiente"></div>
-                <div class="card-body">
-                    <h3>Juegos y Diversión</h3>
-                    <p>Un ambiente acogedor para compartir.</p>
-                </div>
-            </div>
-
-        </div>
-
+    <div class="ambiente-grid">
+      <div class="card"><div class="card-img billar"></div><div class="card-body"><h3>Billar</h3><p>Mesas para disfrutar partidas entre amigos.</p></div></div>
+      <div class="card"><div class="card-img domino"></div><div class="card-body"><h3>Dominó</h3><p>La tradición del barrio sigue viva.</p></div></div>
+      <div class="card"><div class="card-img ambiente-img"></div><div class="card-body"><h3>Juegos y Diversión</h3><p>Un ambiente acogedor para compartir.</p></div></div>
     </div>
-
+  </div>
 </section>
 
 <section class="contacto" id="contacto">
-
-    <div class="container">
-
-        <div class="contact-box">
-
-            <h2 class="section-title">Visítanos</h2>
-
-            <p>
-                Pronto estaremos compartiendo ubicación, horarios,
-                redes sociales y promociones.
-            </p>
-
-            <br>
-
-            <a href="#" class="btn btn-primary">
-                WhatsApp
-            </a>
-
-        </div>
-
+  <div class="container">
+    <div class="contact-box">
+      <h2 class="section-title">Visítanos</h2>
+      <p>Pronto estaremos compartiendo ubicación, horarios, redes sociales y promociones.</p>
+      <br>
+      <a href="#" class="btn btn-primary">WhatsApp</a>
     </div>
-
+  </div>
 </section>
 
 <footer class="footer">
-    © 2026 La Esquina de Mis Viejos • Todos los derechos reservados
+  © 2026 La Esquina de Mis Viejos • Todos los derechos reservados
 </footer>
 
 </body>
-```
+</html>
