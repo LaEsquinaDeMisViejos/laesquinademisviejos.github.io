@@ -1,237 +1,258 @@
-Pega esto completo en `styles.css`:
-
-```css
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #050505;
-  color: #f3e9d2;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: #f3e9d2;
+    line-height: 1.6;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
 }
 
 .hero {
-  min-height: 100vh;
-  padding: 35px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background:
-    linear-gradient(rgba(0, 0, 0, .72), rgba(0, 0, 0, .9)),
-    radial-gradient(circle at top, #8b0000, #050505 65%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.90)),
+        radial-gradient(circle at top, #8b0000, #050505 70%);
 }
 
 .hero-content {
-  max-width: 850px;
+    max-width: 900px;
 }
 
 .logo {
-  width: 280px;
-  max-width: 85%;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, .8));
+    width: 280px;
+    max-width: 90%;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 8vw, 5rem);
-  line-height: .95;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .lema {
-  margin-top: 14px;
-  font-size: 1.2rem;
-  color: #f3e9d2;
+    font-size: 1.2rem;
+    color: #f3e9d2;
+    margin-bottom: 30px;
 }
 
 .hero-buttons {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 999px;
-  font-weight: bold;
-  transition: .25s ease;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: .3s;
 }
 
 .btn-primary {
-  background: #d61e1e;
-  color: white;
+    background: #d61e1e;
+    color: white;
 }
 
 .btn-secondary {
-  border: 1px solid rgba(243, 233, 210, .45);
-  color: #f3e9d2;
+    border: 1px solid rgba(255,255,255,.3);
+    color: white;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 section {
-  padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 .container {
-  max-width: 1100px;
-  margin: auto;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .section-title {
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 18px;
-  text-transform: uppercase;
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .section-subtitle {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto 40px;
-  color: #d8c7a8;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    color: #d8c7a8;
 }
 
 .about {
-  background: #0b0b0b;
+    background: #0b0b0b;
 }
 
 .about-card {
-  max-width: 850px;
-  margin: auto;
-  padding: 30px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .12);
-  text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
 }
 
 .menu {
-  background: linear-gradient(180deg, #050505, #130606);
+    background: #050505;
 }
 
 .menu-grid,
 .ambiente-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .card {
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .12);
-  border-radius: 20px;
-  overflow: hidden;
+    background: #111;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
 }
 
 .card-img {
-  height: 190px;
-  background: #1a1a1a;
-  background-size: cover;
-  background-position: center;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-body {
-  padding: 20px;
+    padding: 20px;
 }
 
 .card-body h3 {
-  color: #ffffff;
-  margin-bottom: 8px;
-  font-size: 1.4rem;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .card-body p {
-  color: #d8c7a8;
-  font-size: .95rem;
+    color: #cfcfcf;
 }
 
-.ambiente {
-  background: #0b0b0b;
+.ambiente-section {
+    background: #0b0b0b;
 }
 
 .contacto {
-  background:
-    linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .95)),
-    radial-gradient(circle at bottom, #8b0000, #050505 70%);
-  text-align: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.95)),
+        radial-gradient(circle at bottom, #8b0000, #050505 70%);
 }
 
 .contact-box {
-  max-width: 700px;
-  margin: auto;
-  padding: 30px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .12);
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
 }
 
 .footer {
-  padding: 25px 20px;
-  text-align: center;
-  background: #030303;
-  color: #a99572;
-  font-size: .9rem;
+    background: #030303;
+    text-align: center;
+    padding: 25px;
+    color: #999;
 }
 
-@media (max-width: 850px) {
-  .menu-grid,
-  .ambiente-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+/* IMÁGENES DEL MENÚ */
+
+.cerveza {
+    background-image: url('img/cerveza.jpg');
+}
+
+.tragos {
+    background-image: url('img/tragos.jpg');
+}
+
+.shots {
+    background-image: url('img/shots.jpg');
+}
+
+.camarones {
+    background-image: url('img/camarones.jpg');
+}
+
+.tostones {
+    background-image: url('img/tostones.jpg');
+}
+
+.picadera {
+    background-image: url('img/picadera.jpg');
+}
+
+/* AMBIENTE */
+
+.billar {
+    background-image: url('img/billar.jpg');
+}
+
+.domino {
+    background-image: url('img/domino.jpg');
+}
+
+.ambiente-img {
+    background-image: url('img/ambiente.jpg');
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .menu-grid,
+    .ambiente-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (max-width: 600px) {
-  section {
-    padding: 55px 16px;
-  }
 
-  .menu-grid,
-  .ambiente-grid {
-    grid-template-columns: 1fr;
-  }
+    .menu-grid,
+    .ambiente-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .logo {
-    width: 230px;
-  }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .btn {
-    width: 100%;
-    max-width: 280px;
-  }
+    .btn {
+        width: 280px;
+    }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+    .section-title {
+        font-size: 2rem;
+    }
+
 }
-.card-body h3 {
-    color: #fff;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-```
