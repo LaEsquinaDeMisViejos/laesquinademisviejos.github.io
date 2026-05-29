@@ -27,19 +27,8 @@ a {
 .header {
   position: fixed;
   top: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 32px);
-  max-width: 1150px;
+  left: 18px;
   z-index: 1000;
-  padding: 14px 18px;
-  border-radius: 999px;
-  background: rgba(5, 5, 5, .72);
-  border: 1px solid rgba(243, 233, 210, .14);
-  backdrop-filter: blur(18px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .brand {
