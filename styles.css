@@ -1,0 +1,230 @@
+Pega esto completo en `styles.css`:
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: #f3e9d2;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 35px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, .72), rgba(0, 0, 0, .9)),
+    radial-gradient(circle at top, #8b0000, #050505 65%);
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.logo {
+  width: 280px;
+  max-width: 85%;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, .8));
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  line-height: .95;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.lema {
+  margin-top: 14px;
+  font-size: 1.2rem;
+  color: #f3e9d2;
+}
+
+.hero-buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: .25s ease;
+}
+
+.btn-primary {
+  background: #d61e1e;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(243, 233, 210, .45);
+  color: #f3e9d2;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  color: #d8c7a8;
+}
+
+.about {
+  background: #0b0b0b;
+}
+
+.about-card {
+  max-width: 850px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .12);
+  text-align: center;
+}
+
+.menu {
+  background: linear-gradient(180deg, #050505, #130606);
+}
+
+.menu-grid,
+.ambiente-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-img {
+  height: 190px;
+  background: #1a1a1a;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.card-body p {
+  color: #d8c7a8;
+  font-size: .95rem;
+}
+
+.ambiente {
+  background: #0b0b0b;
+}
+
+.contacto {
+  background:
+    linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .95)),
+    radial-gradient(circle at bottom, #8b0000, #050505 70%);
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .12);
+}
+
+.footer {
+  padding: 25px 20px;
+  text-align: center;
+  background: #030303;
+  color: #a99572;
+  font-size: .9rem;
+}
+
+@media (max-width: 850px) {
+  .menu-grid,
+  .ambiente-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 55px 16px;
+  }
+
+  .menu-grid,
+  .ambiente-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    width: 230px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+```
